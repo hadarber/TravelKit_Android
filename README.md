@@ -28,3 +28,5 @@ Toast - show messages
 Date picker dialog - enter the start date of the trip
 
 Glide - for uploading photos for a trip
+
+Lottie - display an animation while the application is loading
