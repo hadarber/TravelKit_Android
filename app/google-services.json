@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "887128623731",
+    "firebase_url": "https://travelkit-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "travelkit-app",
+    "storage_bucket": "travelkit-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887128623731:android:1089045c63e0af1e6af806",
+        "android_client_info": {
+          "package_name": "com.example.travelkitapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHJ-AWdPV91MHF02MvDdtWvhll1CsUyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

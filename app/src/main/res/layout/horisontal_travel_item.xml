@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/travel_CARD_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="@dimen/data_elevation"
+        app:cardCornerRadius="@dimen/picture_corner_radius"
+        app:cardElevation="@dimen/data_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPic"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_margin="2dp"
+                android:layout_centerVertical="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/trip_logo"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_toEndOf="@+id/cvPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/travel_IMG_favorite"
+                    android:layout_width="@dimen/heart_dimens"
+                    android:layout_height="@dimen/heart_dimens"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/heart_margin"
+                    android:layout_marginEnd="@dimen/heart_margin"
+                    app:srcCompat="@drawable/empty_heart" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/travel_LBL_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/data_end_margin"
+                    android:layout_marginEnd="@dimen/data_end_margin"
+                    android:layout_toStartOf="@+id/travel_IMG_favorite"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/mainColor"
+                    tools:text="Travel Name" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/travel_LBL_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/travel_LBL_name"
+                    android:layout_alignStart="@id/travel_LBL_name"
+                    android:layout_marginTop="@dimen/data_end_margin"
+                    android:layout_marginEnd="@dimen/data_end_margin"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:textSize="@dimen/data_text_size"
+                    android:textColor="@color/mainColor"
+                    tools:text="2024-01-01" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/travel_LBL_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/travel_LBL_year"
+                    android:layout_alignStart="@id/travel_LBL_name"
+                    android:layout_marginTop="@dimen/data_end_margin"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:textSize="@dimen/data_text_size"
+                    android:textColor="@color/mainColor"
+                    tools:text="5 days" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/travel_LBL_continent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/travel_LBL_duration"
+                    android:layout_alignStart="@id/travel_LBL_name"
+                    android:layout_marginTop="@dimen/data_end_margin"
+                    android:layout_marginEnd="@dimen/data_end_margin"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:textSize="@dimen/data_text_size"
+                    android:textColor="@color/mainColor"
+                    tools:text="Europe" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:visibility="visible"
+                    android:id="@+id/ivDetails"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:layout_below="@id/travel_LBL_continent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/data_end_margin"
+                    android:layout_marginHorizontal="@dimen/data_end_margin"
+                    android:src="@drawable/next"
+                    android:tint="@color/mainColor" />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
