@@ -32,3 +32,6 @@ The app integrates with **Firebase** for data storage and authentication, and us
 - **Toast**: For displaying short messages to the user.
 - **DatePicker Dialog**: For selecting the start date of trips.
 - **Android Patterns**: For email validation.
+
+
+![image](https://github.com/user-attachments/assets/0933d230-ed85-4ceb-9ed9-ab1758ba42b5)
